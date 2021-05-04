@@ -8,7 +8,8 @@
 import Foundation
 
 class ASBTransactionDetailsViewModel {
-  var transaction: MultipleBindingValue<ASBTransaction?> = MultipleBindingValue(value: nil)
   
+  //MARK: - Public variables
+  var transaction: MultipleBindingValue<ASBTransaction?> = MultipleBindingValue(value: nil)
   
 }

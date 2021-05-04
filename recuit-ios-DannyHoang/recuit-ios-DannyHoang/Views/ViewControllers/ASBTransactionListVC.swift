@@ -9,12 +9,16 @@ import UIKit
 
 class ASBTransactionListVC: UIViewController {
 
-  @IBOutlet weak var transactionTableView: UITableView!
-  
-  var viewModel: ASBTransactionListViewModel = ASBTransactionListViewModel()
+  //MARK: - Public Const
   let searchController = UISearchController(searchResultsController: nil)
   
+  //MARK: - Public IBOutlets
+  @IBOutlet weak var transactionTableView: UITableView!
   
+  //MARK: - Public variables
+  var viewModel: ASBTransactionListViewModel = ASBTransactionListViewModel()
+  
+  //MARK: - Life Cycle Functions
   override func viewDidLoad() {
     super.viewDidLoad()
     searchController.searchResultsUpdater = self
@@ -36,19 +40,21 @@ class ASBTransactionListVC: UIViewController {
     viewModel.fetchTransactionList()
   }
   
+  //MARK: - Private Functions
   private func didReceiveTransactionList() {
     transactionTableView.reloadData()
   }
 
-
 }
 
+//MARK: - UISearchResultsUpdating Implementations
 extension ASBTransactionListVC: UISearchResultsUpdating {
   func updateSearchResults(for searchController: UISearchController) {
     // TODO
   }
 }
 
+//MARK: - UITableViewDataSource Implementations
 extension ASBTransactionListVC: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     guard let dataSource = viewModel.transactionList.value else {
@@ -68,6 +74,7 @@ extension ASBTransactionListVC: UITableViewDataSource {
   
 }
 
+//MARK: - UITableViewDelegate Implementations
 extension ASBTransactionListVC: UITableViewDelegate{
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     guard let dataSource = viewModel.transactionList.value else { return }

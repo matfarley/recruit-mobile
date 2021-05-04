@@ -11,12 +11,15 @@ class ASBTransactionDetailsVC: UIViewController {
   
   var viewModel = ASBTransactionDetailsViewModel()
   
+  //MARK: - Public IBOulets
   @IBOutlet weak var idLabel: UILabel!
   @IBOutlet weak var summaryLabel: UILabel!
   @IBOutlet weak var dateLabel: UILabel!
   @IBOutlet weak var amountLabel: UILabel!
+  @IBOutlet weak var gstLabel: UILabel!
   @IBOutlet weak var bgView: UIView!
   
+  //MARK: - Public Life Cycle Functions
   override func viewDidLoad() {
     super.viewDidLoad()
     bgView.layer.masksToBounds = true
@@ -27,11 +30,22 @@ class ASBTransactionDetailsVC: UIViewController {
     }
   }
   
-  
+  //MARK: - Public Functions
   func populateUI(_ transaction: ASBTransaction){
     idLabel.text = transaction.id
     summaryLabel.text = transaction.summary
     dateLabel.text = transaction.getDateString()
+    if let debit = transaction.debit, debit != 0 {
+      amountLabel.textColor = .red
+    } else if let credit = transaction.credit, credit != 0 {
+      amountLabel.textColor = .green
+    }
     amountLabel.text = transaction.getAmountString()
+    
+    if let _ = transaction.gst {
+      gstLabel.text = "gst: " + transaction.getGSTString()
+    } else {
+      gstLabel.isHidden = true
+    }
   }
 }

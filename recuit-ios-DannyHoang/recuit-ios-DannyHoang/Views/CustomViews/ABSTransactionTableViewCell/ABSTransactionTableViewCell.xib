@@ -42,6 +42,12 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9e-Gh-aOP">
+                        <rect key="frame" x="422" y="50" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQj-2J-fpU">
                         <rect key="frame" x="20" y="46" width="341" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -61,10 +67,12 @@
                     <constraint firstItem="cDF-cM-ugK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="nza-Di-OZY"/>
                     <constraint firstItem="grF-i1-pxm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="oe2-Gf-LOj"/>
                     <constraint firstItem="cDF-cM-ugK" firstAttribute="leading" secondItem="grF-i1-pxm" secondAttribute="trailing" id="p2e-lp-Jwn"/>
+                    <constraint firstItem="k9e-Gh-aOP" firstAttribute="trailing" secondItem="cDF-cM-ugK" secondAttribute="trailing" id="pKk-Vy-HYr"/>
                     <constraint firstAttribute="bottom" secondItem="5ej-rx-YFD" secondAttribute="bottom" constant="-5" id="pfg-8x-Go7"/>
                     <constraint firstItem="vTv-Ug-ipC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="sHM-Nu-KsK"/>
                     <constraint firstItem="JQj-2J-fpU" firstAttribute="top" secondItem="grF-i1-pxm" secondAttribute="bottom" constant="15" id="uqN-gs-CXl"/>
                     <constraint firstItem="5ej-rx-YFD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="-5" id="wKo-g5-AHr"/>
+                    <constraint firstItem="k9e-Gh-aOP" firstAttribute="top" secondItem="cDF-cM-ugK" secondAttribute="bottom" constant="4" id="y5Y-Qd-a60"/>
                     <constraint firstItem="vTv-Ug-ipC" firstAttribute="top" secondItem="JQj-2J-fpU" secondAttribute="bottom" constant="15" id="zq2-ks-oXB"/>
                 </constraints>
             </tableViewCellContentView>
@@ -73,6 +81,7 @@
                 <outlet property="amountLabel" destination="cDF-cM-ugK" id="uan-7r-AyS"/>
                 <outlet property="bgView" destination="5ej-rx-YFD" id="Nqj-QZ-MR9"/>
                 <outlet property="dateLabel" destination="grF-i1-pxm" id="s3f-Y8-8e0"/>
+                <outlet property="gstLabel" destination="k9e-Gh-aOP" id="sCG-Sd-P2a"/>
                 <outlet property="idLabel" destination="vTv-Ug-ipC" id="zeF-Rc-uwo"/>
                 <outlet property="summaryLabel" destination="JQj-2J-fpU" id="CSX-zc-NcI"/>
             </connections>

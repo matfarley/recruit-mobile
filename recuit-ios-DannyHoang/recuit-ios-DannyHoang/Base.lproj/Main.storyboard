@@ -55,7 +55,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAt-Js-YUj">
                                 <rect key="frame" x="25" y="318" width="364" height="270"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEF-hH-cSA">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEF-hH-cSA">
                                         <rect key="frame" x="8" y="10" width="52" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
@@ -67,13 +67,19 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wL-VY-I85">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wL-VY-I85">
                                         <rect key="frame" x="132.5" y="109.5" width="99" height="51"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYg-BR-eUU">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndo-x6-ioB">
+                                        <rect key="frame" x="189.5" y="159" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYg-BR-eUU">
                                         <rect key="frame" x="68" y="10" width="278" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
@@ -87,6 +93,8 @@
                                     <constraint firstItem="0wL-VY-I85" firstAttribute="centerY" secondItem="pAt-Js-YUj" secondAttribute="centerY" id="Oj9-Ns-q5H"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="kvc-qs-bYR" secondAttribute="trailing" constant="10" id="QI6-O5-vOm"/>
                                     <constraint firstItem="iEF-hH-cSA" firstAttribute="top" secondItem="pAt-Js-YUj" secondAttribute="top" constant="10" id="TlD-TO-Kpp"/>
+                                    <constraint firstItem="ndo-x6-ioB" firstAttribute="top" secondItem="0wL-VY-I85" secondAttribute="bottom" constant="-1.5" id="ap4-Ex-fuZ"/>
+                                    <constraint firstItem="ndo-x6-ioB" firstAttribute="trailing" secondItem="0wL-VY-I85" secondAttribute="trailing" id="fI4-EB-PoX"/>
                                     <constraint firstAttribute="trailing" secondItem="XYg-BR-eUU" secondAttribute="trailing" constant="10" id="iL7-hg-ds9"/>
                                     <constraint firstItem="iEF-hH-cSA" firstAttribute="leading" secondItem="pAt-Js-YUj" secondAttribute="leading" constant="10" id="nV0-ui-H4Q"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="kvc-qs-bYR" secondAttribute="bottom" constant="10" id="y0T-DC-5Zh"/>
@@ -107,6 +115,7 @@
                         <outlet property="amountLabel" destination="0wL-VY-I85" id="kH9-i4-B0A"/>
                         <outlet property="bgView" destination="pAt-Js-YUj" id="LBq-Uf-eOj"/>
                         <outlet property="dateLabel" destination="kvc-qs-bYR" id="Qwi-LG-TOU"/>
+                        <outlet property="gstLabel" destination="ndo-x6-ioB" id="b2P-ES-Lfd"/>
                         <outlet property="idLabel" destination="iEF-hH-cSA" id="Vne-bm-Qig"/>
                         <outlet property="summaryLabel" destination="XYg-BR-eUU" id="xLC-a7-Mpk"/>
                     </connections>

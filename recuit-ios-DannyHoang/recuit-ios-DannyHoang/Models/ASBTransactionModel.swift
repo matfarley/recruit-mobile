@@ -13,10 +13,12 @@ struct ASBTransaction {
   let summary: String
   let debit: Float?
   let credit: Float?
+  let gst: Float?
 }
 
 extension ASBTransaction: Decodable {
   
+  // MARK:- ENUM
   private enum ASBTransactionCodingKeys: String, CodingKey {
     case id = "id"
     case transactionDate = "transactionDate"
@@ -25,6 +27,7 @@ extension ASBTransaction: Decodable {
     case credit = "credit"
   }
   
+  // MARK:- Life Cycle Functions
   init(from decoder: Decoder) throws {
     let container = try decoder.container(keyedBy: ASBTransactionCodingKeys.self)
     id = try container.decodeIfPresent(String.self, forKey: .id)
@@ -37,8 +40,14 @@ extension ASBTransaction: Decodable {
     debit = try container.decodeIfPresent(Float.self, forKey: .debit)
     credit = try container.decodeIfPresent(Float.self, forKey: .credit)
     
+    if let _debit = debit, _debit != 0 {
+      gst = (debit! * 3) / 23
+    } else {
+      gst = nil
+    }
   }
   
+  // MARK:- Public Functions
   func getDateString() -> String {
     guard let _transactionDate = transactionDate else { return "" }
     let dateformatter = DateFormatter()
@@ -56,6 +65,14 @@ extension ASBTransaction: Decodable {
       return numberFormatter.string(for: credit) ?? ""
     }
     return ""
+  }
+  
+  func getGSTString() -> String {
+    let numberFormatter = NumberFormatter()
+    numberFormatter.numberStyle = .currency
+    numberFormatter.maximumFractionDigits = 2
+    guard let result = numberFormatter.string(for: gst) else { return "" }
+    return result
   }
   
 }
