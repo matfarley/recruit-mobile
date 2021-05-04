@@ -1,6 +1,6 @@
 //
 //  ASBTransactionModel.swift
-//  recuit-ios-mobile
+//  recuit-ios-DannyHoang
 //
 //  Created by Truong Dinh Hoang on 5/05/21.
 //
@@ -39,6 +39,23 @@ extension ASBTransaction: Decodable {
     
   }
   
+  func getDateString() -> String {
+    guard let _transactionDate = transactionDate else { return "" }
+    let dateformatter = DateFormatter()
+    dateformatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
+    return dateformatter.string(from: _transactionDate)
+  }
   
+  func getAmountString() -> String {
+    let numberFormatter = NumberFormatter()
+    numberFormatter.numberStyle = .currency
+    numberFormatter.maximumFractionDigits = 2
+    if let _debit = debit, _debit != 0 {
+      return numberFormatter.string(for: debit) ?? ""
+    } else if let _credit = credit, _credit != 0 {
+      return numberFormatter.string(for: credit) ?? ""
+    }
+    return ""
+  }
   
 }

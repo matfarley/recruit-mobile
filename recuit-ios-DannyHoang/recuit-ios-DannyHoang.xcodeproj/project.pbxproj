@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E30019DE2641DFD100C5A859 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30019DD2641DFD100C5A859 /* AppDelegate.swift */; };
 		E30019E02641DFD100C5A859 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30019DF2641DFD100C5A859 /* SceneDelegate.swift */; };
-		E30019E22641DFD100C5A859 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30019E12641DFD100C5A859 /* ViewController.swift */; };
 		E30019E52641DFD100C5A859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E30019E32641DFD100C5A859 /* Main.storyboard */; };
 		E30019E72641DFD400C5A859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30019E62641DFD400C5A859 /* Assets.xcassets */; };
 		E30019EA2641DFD400C5A859 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E30019E82641DFD400C5A859 /* LaunchScreen.storyboard */; };
@@ -25,13 +24,18 @@
 		E3F94A3F2641F8CE00A2936C /* MultipleBindingValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F94A322641F8CE00A2936C /* MultipleBindingValue.swift */; };
 		E3F94A412641F8DC00A2936C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F94A402641F8DC00A2936C /* NetworkManager.swift */; };
 		E3F94A432641F8E400A2936C /* ASBTransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F94A422641F8E400A2936C /* ASBTransactionModel.swift */; };
+		E3F94A582641FC3300A2936C /* ABSTransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F94A562641FC3300A2936C /* ABSTransactionTableViewCell.swift */; };
+		E3F94A592641FC3300A2936C /* ABSTransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3F94A572641FC3300A2936C /* ABSTransactionTableViewCell.xib */; };
+		E3F94A5C2641FC4800A2936C /* ASBTransactionDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F94A5A2641FC4800A2936C /* ASBTransactionDetailsVC.swift */; };
+		E3F94A5D2641FC4800A2936C /* ASBTransactionListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F94A5B2641FC4800A2936C /* ASBTransactionListVC.swift */; };
+		E3F94A602641FCDF00A2936C /* ASBTransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F94A5E2641FCDF00A2936C /* ASBTransactionListViewModel.swift */; };
+		E3F94A612641FCDF00A2936C /* ASBTransactionDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F94A5F2641FCDF00A2936C /* ASBTransactionDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E30019DA2641DFD100C5A859 /* recuit-ios-DannyHoang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "recuit-ios-DannyHoang.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30019DD2641DFD100C5A859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E30019DF2641DFD100C5A859 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E30019E12641DFD100C5A859 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E30019E42641DFD100C5A859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E30019E62641DFD400C5A859 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E30019E92641DFD400C5A859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +52,12 @@
 		E3F94A322641F8CE00A2936C /* MultipleBindingValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleBindingValue.swift; sourceTree = "<group>"; };
 		E3F94A402641F8DC00A2936C /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E3F94A422641F8E400A2936C /* ASBTransactionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASBTransactionModel.swift; sourceTree = "<group>"; };
+		E3F94A562641FC3300A2936C /* ABSTransactionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABSTransactionTableViewCell.swift; sourceTree = "<group>"; };
+		E3F94A572641FC3300A2936C /* ABSTransactionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ABSTransactionTableViewCell.xib; sourceTree = "<group>"; };
+		E3F94A5A2641FC4800A2936C /* ASBTransactionDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASBTransactionDetailsVC.swift; sourceTree = "<group>"; };
+		E3F94A5B2641FC4800A2936C /* ASBTransactionListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASBTransactionListVC.swift; sourceTree = "<group>"; };
+		E3F94A5E2641FCDF00A2936C /* ASBTransactionListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASBTransactionListViewModel.swift; sourceTree = "<group>"; };
+		E3F94A5F2641FCDF00A2936C /* ASBTransactionDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASBTransactionDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +134,7 @@
 		E30019F52641E05000C5A859 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E3F94A542641FC3300A2936C /* CustomViews */,
 				E3F94A4C2641F8F900A2936C /* ViewControllers */,
 			);
 			path = Views;
@@ -195,7 +206,8 @@
 		E3F94A4C2641F8F900A2936C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				E30019E12641DFD100C5A859 /* ViewController.swift */,
+				E3F94A5A2641FC4800A2936C /* ASBTransactionDetailsVC.swift */,
+				E3F94A5B2641FC4800A2936C /* ASBTransactionListVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -203,8 +215,27 @@
 		E3F94A532641FA6800A2936C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				E3F94A5F2641FCDF00A2936C /* ASBTransactionDetailsViewModel.swift */,
+				E3F94A5E2641FCDF00A2936C /* ASBTransactionListViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E3F94A542641FC3300A2936C /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				E3F94A552641FC3300A2936C /* ABSTransactionTableViewCell */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		E3F94A552641FC3300A2936C /* ABSTransactionTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E3F94A562641FC3300A2936C /* ABSTransactionTableViewCell.swift */,
+				E3F94A572641FC3300A2936C /* ABSTransactionTableViewCell.xib */,
+			);
+			path = ABSTransactionTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +298,7 @@
 				E30019EA2641DFD400C5A859 /* LaunchScreen.storyboard in Resources */,
 				E30019E72641DFD400C5A859 /* Assets.xcassets in Resources */,
 				E30019E52641DFD100C5A859 /* Main.storyboard in Resources */,
+				E3F94A592641FC3300A2936C /* ABSTransactionTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,19 +310,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3F94A3D2641F8CE00A2936C /* NetworkLogger.swift in Sources */,
+				E3F94A582641FC3300A2936C /* ABSTransactionTableViewCell.swift in Sources */,
 				E3F94A372641F8CE00A2936C /* URLParameterEncoder.swift in Sources */,
 				E3F94A3A2641F8CE00A2936C /* NetworkRouter.swift in Sources */,
 				E3F94A362641F8CE00A2936C /* ParameterEncoding.swift in Sources */,
+				E3F94A5C2641FC4800A2936C /* ASBTransactionDetailsVC.swift in Sources */,
 				E3F94A332641F8CE00A2936C /* UIViewController+Extension.swift in Sources */,
-				E30019E22641DFD100C5A859 /* ViewController.swift in Sources */,
 				E30019DE2641DFD100C5A859 /* AppDelegate.swift in Sources */,
 				E3F94A432641F8E400A2936C /* ASBTransactionModel.swift in Sources */,
 				E3F94A3F2641F8CE00A2936C /* MultipleBindingValue.swift in Sources */,
 				E3F94A412641F8DC00A2936C /* NetworkManager.swift in Sources */,
 				E3F94A382641F8CE00A2936C /* JSONParameterEncoder.swift in Sources */,
+				E3F94A612641FCDF00A2936C /* ASBTransactionDetailsViewModel.swift in Sources */,
 				E3F94A342641F8CE00A2936C /* DateFormatter+Extension.swift in Sources */,
+				E3F94A5D2641FC4800A2936C /* ASBTransactionListVC.swift in Sources */,
 				E3F94A352641F8CE00A2936C /* ASBTransactionAPI.swift in Sources */,
 				E30019E02641DFD100C5A859 /* SceneDelegate.swift in Sources */,
+				E3F94A602641FCDF00A2936C /* ASBTransactionListViewModel.swift in Sources */,
 				E3F94A3C2641F8CE00A2936C /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
