@@ -17,7 +17,11 @@ class ASBTransactionListViewModel {
       transactionList.value = transactionListResponse
     }
   }
+  
   var transactionList: MultipleBindingValue<[ASBTransaction]?> = MultipleBindingValue(value: nil)
+  
+  var fetchTransactionErrorMessage: MultipleBindingValue<String?> = MultipleBindingValue(value: nil)
+  
   
   //MARK: - Public functions
   /**
@@ -27,6 +31,10 @@ class ASBTransactionListViewModel {
   func fetchTransactionList() {
     networkManager.getTransactions {[weak self] transactionList, data, errorString in
       guard let strongSelf = self else { return }
+      defer {
+        strongSelf.fetchTransactionErrorMessage.value = errorString
+      }
+      
       guard errorString == nil else {
         strongSelf.transactionList.value = nil
         return

@@ -25,18 +25,44 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="vXN-Iw-bQM"/>
                                 </connections>
                             </tableView>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XAH-1Y-ygb">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="c8X-Ah-b7X">
+                                        <rect key="frame" x="188.5" y="368.5" width="37" height="37"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTK-av-3YS">
+                                        <rect key="frame" x="157" y="422" width="100" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="c8X-Ah-b7X" firstAttribute="centerY" secondItem="XAH-1Y-ygb" secondAttribute="centerY" id="0XB-IC-StD"/>
+                                    <constraint firstItem="c8X-Ah-b7X" firstAttribute="centerX" secondItem="XAH-1Y-ygb" secondAttribute="centerX" id="6va-pd-Tui"/>
+                                    <constraint firstItem="zTK-av-3YS" firstAttribute="centerX" secondItem="XAH-1Y-ygb" secondAttribute="centerX" id="7MN-GR-xXs"/>
+                                    <constraint firstItem="zTK-av-3YS" firstAttribute="top" secondItem="c8X-Ah-b7X" secondAttribute="bottom" constant="16.5" id="TV8-5R-HsZ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XAH-1Y-ygb" secondAttribute="trailing" id="0dd-Fe-uQd"/>
+                            <constraint firstItem="XAH-1Y-ygb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9EM-Rg-LCT"/>
                             <constraint firstItem="9av-Lq-EFT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CDs-Fc-7Cx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9av-Lq-EFT" secondAttribute="bottom" id="Pf3-E7-Xde"/>
                             <constraint firstItem="9av-Lq-EFT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QgX-8k-3eF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9av-Lq-EFT" secondAttribute="trailing" id="ZsT-KT-3WI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XAH-1Y-ygb" secondAttribute="bottom" id="a5y-X6-Zul"/>
+                            <constraint firstItem="XAH-1Y-ygb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ycx-I3-RTM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gJF-NA-ecl"/>
                     <connections>
+                        <outlet property="loadingView" destination="XAH-1Y-ygb" id="n3d-tv-Qsr"/>
                         <outlet property="transactionTableView" destination="9av-Lq-EFT" id="kag-fk-fXi"/>
                     </connections>
                 </viewController>

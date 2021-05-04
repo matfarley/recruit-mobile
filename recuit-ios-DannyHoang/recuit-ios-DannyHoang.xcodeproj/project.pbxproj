@@ -30,6 +30,8 @@
 		E3F94A5D2641FC4800A2936C /* ASBTransactionListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F94A5B2641FC4800A2936C /* ASBTransactionListVC.swift */; };
 		E3F94A602641FCDF00A2936C /* ASBTransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F94A5E2641FCDF00A2936C /* ASBTransactionListViewModel.swift */; };
 		E3F94A612641FCDF00A2936C /* ASBTransactionDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F94A5F2641FCDF00A2936C /* ASBTransactionDetailsViewModel.swift */; };
+		E3F94A652642072400A2936C /* ASBMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F94A632642072400A2936C /* ASBMessageTableViewCell.swift */; };
+		E3F94A662642072400A2936C /* ASBMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3F94A642642072400A2936C /* ASBMessageTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		E3F94A5B2641FC4800A2936C /* ASBTransactionListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASBTransactionListVC.swift; sourceTree = "<group>"; };
 		E3F94A5E2641FCDF00A2936C /* ASBTransactionListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASBTransactionListViewModel.swift; sourceTree = "<group>"; };
 		E3F94A5F2641FCDF00A2936C /* ASBTransactionDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASBTransactionDetailsViewModel.swift; sourceTree = "<group>"; };
+		E3F94A632642072400A2936C /* ASBMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASBMessageTableViewCell.swift; sourceTree = "<group>"; };
+		E3F94A642642072400A2936C /* ASBMessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ASBMessageTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +228,7 @@
 		E3F94A542641FC3300A2936C /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				E3F94A62264206E400A2936C /* ASBMessageTableViewCell */,
 				E3F94A552641FC3300A2936C /* ABSTransactionTableViewCell */,
 			);
 			path = CustomViews;
@@ -236,6 +241,15 @@
 				E3F94A572641FC3300A2936C /* ABSTransactionTableViewCell.xib */,
 			);
 			path = ABSTransactionTableViewCell;
+			sourceTree = "<group>";
+		};
+		E3F94A62264206E400A2936C /* ASBMessageTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E3F94A632642072400A2936C /* ASBMessageTableViewCell.swift */,
+				E3F94A642642072400A2936C /* ASBMessageTableViewCell.xib */,
+			);
+			path = ASBMessageTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F94A662642072400A2936C /* ASBMessageTableViewCell.xib in Resources */,
 				E30019EA2641DFD400C5A859 /* LaunchScreen.storyboard in Resources */,
 				E30019E72641DFD400C5A859 /* Assets.xcassets in Resources */,
 				E30019E52641DFD100C5A859 /* Main.storyboard in Resources */,
@@ -311,6 +326,7 @@
 			files = (
 				E3F94A3D2641F8CE00A2936C /* NetworkLogger.swift in Sources */,
 				E3F94A582641FC3300A2936C /* ABSTransactionTableViewCell.swift in Sources */,
+				E3F94A652642072400A2936C /* ASBMessageTableViewCell.swift in Sources */,
 				E3F94A372641F8CE00A2936C /* URLParameterEncoder.swift in Sources */,
 				E3F94A3A2641F8CE00A2936C /* NetworkRouter.swift in Sources */,
 				E3F94A362641F8CE00A2936C /* ParameterEncoding.swift in Sources */,
